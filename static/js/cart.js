@@ -52,7 +52,7 @@ function addCookieItem(productId, action){
 		cart[productId]['quantity'] -= 1
 
 		if (cart[productId]['quantity'] <= 0){
-			console.log('Item should be deleted')
+			console.log('Item deleted')
 			delete cart[productId];
 		}
 	}
