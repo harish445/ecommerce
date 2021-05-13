@@ -64,12 +64,12 @@
 				</div>
 				{% endfor %}
 				<h5>Items:   {{order.get_cart_items}}</h5>
-				<h5>Total:   ₹{{order.get_cart_total|floatformat:2}}</h5>
+				<h5>Total:   ${{order.get_cart_total|floatformat:2}}</h5>
 			</div>
 		</div>
 	</div>
 
-	<script src="https://www.paypal.com/sdk/js?client-id=YOUR-CLIENT-ID&currency=USD&disable-funding=credit"></script>
+	<script src="https://www.paypal.com/sdk/js?client-id=ASAJ4r6GRG2BqNck9GsMMHyapsISrPw40yOfRhW6BXlfpY1wEw688xFvGeir-yWbajWMEmO74fItVgXb&currency=USD&disable-funding=credit"></script>
 
 	<script>
 		var total = '{{order.get_cart_total}}'
@@ -193,3 +193,4 @@
 
 
  
+
